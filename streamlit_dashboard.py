@@ -50,7 +50,7 @@ with st.sidebar:
     genre_options = ["All", "Action", "Adventure", "Fantasy", "Biography", "Animation"]
     genre_filter = st.selectbox("Genre", genre_options)
 
-# Constructing SQL query safely using parameterized queries
+# Constructing SQL query using parameterized queries
 query = """
     SELECT Movie_Name, Genre, Duration, Ratings, Voting_Counts 
     FROM movies
